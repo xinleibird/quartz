@@ -41,10 +41,10 @@ other = "编辑此笔记"
 other = "关系图谱"
 
 [search]
-other = "搜索"
+other = "…"
 
 [search_icon]
-other = "搜索"
+other = "查找"
 
 [icon_search]
 other = "Icon to open search"
@@ -56,7 +56,7 @@ other = "Recent Notes"
 other = "first 3 {{ .notes }}"
 
 [search_for_something]
-other = "搜索点什么..."
+other = "找点什么..."
 
 [toc]
 other = "目录"
