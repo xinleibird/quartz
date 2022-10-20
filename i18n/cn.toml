@@ -1,0 +1,65 @@
+[404_message]
+other = "蛤！好像有什么东西不见了。要找的页面不存在。"
+
+[404_back]
+other = "↳ 还是回首页吧。"
+
+[all_posts]
+other = "所有 {{.Title}}"
+
+[last_updated]
+other = "最后更新于"
+
+[notes_count]
+other = "使用这个标签的笔记"
+
+[first_10]
+other = "显示最开始的 10 个结果"
+
+[tag]
+other = "标签"
+
+[backlinks]
+other = "链接到当前笔记"
+
+[no_backlinks]
+other = "未发现入链"
+
+[home]
+other = "Home"
+
+[light_mode]
+other = "亮色模式"
+
+[dark_mode]
+other = "暗色模式"
+
+[edit_source]
+other = "编辑此笔记"
+
+[interactive_graph]
+other = "关系图谱"
+
+[search]
+other = "搜索"
+
+[search_icon]
+other = "搜索"
+
+[icon_search]
+other = "Icon to open search"
+
+[recent_notes]
+other = "Recent Notes"
+
+[first_3_notes]
+other = "first 3 {{ .notes }}"
+
+[search_for_something]
+other = "搜索点什么..."
+
+[toc]
+other = "目录"
+
+[copyright]
+other = "Made by {{ .name }} using <a href=\"https://github.com/jackyzha0/quartz\">Quartz</a>, © {{ .year }}"
