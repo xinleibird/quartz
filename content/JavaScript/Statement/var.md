@@ -1,0 +1,11 @@
+---
+title: var
+aliases: [var]
+tags: [JS]
+enableToc: true
+lastmod: 2022-10-21
+---
+
+`var` [^1] 语句
+
+[^1]: <https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/var>
