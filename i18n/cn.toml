@@ -59,7 +59,7 @@ other = "first 3 {{ .notes }}"
 other = "找点什么..."
 
 [toc]
-other = "目录"
+other = "内容目录"
 
 [copyright]
 other = "Made by {{ .name }} using <a href=\"https://github.com/jackyzha0/quartz\">Quartz</a>, © {{ .year }}"
