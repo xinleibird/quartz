@@ -1,7 +1,7 @@
 ---
 title: strict
 aliases: [严格模式, strict mode]
-tags: [JS]
+tags: [JavaScript]
 enableToc: true
 date: 2022-10-20
 lastmod: 2022-10-24

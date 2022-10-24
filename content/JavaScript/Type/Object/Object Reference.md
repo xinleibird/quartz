@@ -1,7 +1,7 @@
 ---
 title: Object Reference
 aliases: [对象引用, 引用, Object Reference]
-tags: [JS]
+tags: [JavaScript]
 enableToc: true
 date: 2022-10-19
 lastmod: 2022-10-24

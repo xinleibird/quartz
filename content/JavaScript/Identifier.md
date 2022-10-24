@@ -1,7 +1,7 @@
 ---
 title: Identifier
 aliases: [标识符, 变量名, 函数名, 属性名, 键, Identifier, Key]
-tags: [JS]
+tags: [JavaScript]
 enableToc: true
 date: 2022-10-19
 lastmod: 2022-10-24

@@ -1,7 +1,7 @@
 ---
 title: Prototype
 aliases: [原型, prototype]
-tags: [JS]
+tags: [JavaScript]
 enableToc: true
 date: 2022-10-19
 lastmod: 2022-10-24

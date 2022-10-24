@@ -1,7 +1,7 @@
 ---
 title: Value
 aliases: [值, 变量值, 函数值, 属性值, Value]
-tags: [JS]
+tags: [JavaScript]
 enableToc: true
 date: 2022-10-19
 lastmod: 2022-10-24

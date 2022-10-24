@@ -1,7 +1,7 @@
 ---
 title: Global
 aliases: [全局对象, Global object]
-tags: [JS]
+tags: [JavaScript]
 enableToc: true
 date: 2022-10-19
 lastmod: 2022-10-24

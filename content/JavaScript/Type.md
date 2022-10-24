@@ -1,7 +1,7 @@
 ---
 title: Type
 aliases: [数据类型, 类型, Data type]
-tags: [JS]
+tags: [JavaScript]
 enableToc: true
 date: 2022-10-19
 lastmod: 2022-10-24
