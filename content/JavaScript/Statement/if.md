@@ -3,7 +3,8 @@ title: if
 aliases: [if, if...else, else]
 tags: [JS]
 enableToc: true
-lastmod: 2022-10-21
+date: 2022-10-19
+lastmod: 2022-10-24
 ---
 
 `if…else` [^1] 语句

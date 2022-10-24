@@ -3,7 +3,8 @@ title: Wrapper
 aliases: [包装器, Wrapper]
 tags: [JS]
 enableToc: true
-lastmod: 2022-10-21
+date: 2022-10-19
+lastmod: 2022-10-24
 ---
 
 通过使用「包装器 [^1]」，JavaScript 允许我们将 [[JavaScript/Type/Primitive|原始类型]] 转换为相应的 [[JavaScript/Type/Object|对象类型]]，从而可以使用它们的 [[JavaScript/Type/Object/Constructor|构造器]] 上面的原型方法。

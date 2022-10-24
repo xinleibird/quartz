@@ -3,7 +3,8 @@ title: instanceof
 aliases: [instanceof]
 tags: [JS]
 enableToc: true
-lastmod: 2022-10-21
+date: 2022-10-19
+lastmod: 2022-10-24
 ---
 
 `instanceof` [^1] 运算符

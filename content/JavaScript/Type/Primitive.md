@@ -3,10 +3,11 @@ title: Primitive
 aliases: [原始类型, Primitive]
 tags: [JS]
 enableToc: true
-lastmod: 2022-10-21
+date: 2022-10-19
+lastmod: 2022-10-24
 ---
 
-「原始类型 [^1]」是一种 **不是** [[JavaScript/Type/Object|对象类型]]（自然没有 [[JavaScript/Type/Object/Property|属性]]、[[JavaScript/Type/Object/Method|方法]]）的 [[JavaScript/Type|类型]]。「原始类型」的 [[JavaScript/Value|值]] 是 [[JavaScript/Type/Primitive/Value|原始值]]。
+「原始类型 [^1]」是一种 **不是** [[JavaScript/Type/Object|对象类型]]（自然没有 [[JavaScript/Type/Object/Property|属性]]、[[JavaScript/Type/Object/Method|方法]]）的 [[JavaScript/Type|类型]]。「原始类型」的 [[JavaScript/Value|值]] 是 [[JavaScript/Type/Primitive/Primitive Value|原始值]]。
 
 「原始类型」包含以下 7 种具体类型：
 

@@ -3,7 +3,8 @@ title: delete
 aliases: [delete]
 tags: [JS]
 enableToc: true
-lastmod: 2022-10-21
+date: 2022-10-19
+lastmod: 2022-10-24
 ---
 
 `delete` [^1] 运算符

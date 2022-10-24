@@ -1,6 +1,13 @@
-<header>
+<header class="page-header">
     {{ $config := cond (eq $.Site.Language.Lang "en") "config" (printf "config.%s" $.Site.Language.Lang) }}
-    <h1 id="page-title"><a href="{{ "" | absLangURL }}">{{ ( index $.Site.Data $config ).page_title | default $.Site.Data.config.page_title }}</a></h1>
+    <h1 id="page-title">
+      <a href="{{ "" | absLangURL }}" class="logo-link">
+        <img class="logo-image" src="/bird.png" alt="Logo">
+        <span class="logo-text">
+          {{ ( index $.Site.Data $config ).page_title | default $.Site.Data.config.page_title }}
+        </span>
+      </a>
+    </h1>
     <div class="spacer"></div>
     <div id="search-icon">
       <p>{{ i18n "search" }}</p>
@@ -8,4 +15,3 @@
     </div>
     {{partial "darkmode.html" .}}
 </header>
-

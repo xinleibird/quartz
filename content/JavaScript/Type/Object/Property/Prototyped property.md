@@ -1,7 +1,8 @@
 ---
-title: Prototyped
+title: Prototyped property
 aliases: [原型属性, Prototype property]
 tags: [JS]
 enableToc: true
-lastmod: 2022-10-21
+date: 2022-10-19
+lastmod: 2022-10-24
 ---

@@ -1,15 +1,15 @@
 ---
 title: Keyword
 aliases: [关键字, Keyword]
-tags: [JS]
+tags: [JavaScript]
 enableToc: true
-lastmod: 2022-10-21
+date: 2022-10-19
+lastmod: 2022-10-25
 ---
 
-> [!summary]
 「关键字 [^1]」是指那些在 JavaScript 具有特殊意义的「标识」。由于具有特殊意义，这些「标识」中的很大一部分就保留起来而不能被开发者作为 [[JavaScript/Identifier|标识符]] 使用了。
-> <br>
-> 那些保留起来的「关键字」也被叫做「保留字」。
+
+那些保留起来的「关键字」也被叫做「保留字」。
 
 ## 保留字
 

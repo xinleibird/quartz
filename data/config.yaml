@@ -15,10 +15,9 @@ GitHubLink: https://github.com/xinleibird/quartz/tree/hugo/content
 enableSemanticSearch: false
 operandApiKey: "REPLACE-WITH-YOUR-OPERAND-API-KEY"
 description:
-  欢迎来到辛磊的「知识花园」。这里是总结、归纳、回顾、规划自身知识的地方。
-  它未必带来进步，它总是治愈焦虑。
+  欢迎来到「举栗」。学习未必带来进步，但它总是治愈焦虑。
 page_title:
-  "🌰 举栗"
+  "举栗"
 favicon: |
   <link rel="shortcut icon" href="icon.png" type="image/png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

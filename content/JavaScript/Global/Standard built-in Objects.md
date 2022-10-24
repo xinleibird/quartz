@@ -3,7 +3,8 @@ title: Standard built-in Objects
 aliases: [标准内置对象, Standard built-in Objects]
 tags: [JS]
 enableToc: true
-lastmod: 2022-10-21
+date: 2022-10-19
+lastmod: 2022-10-24
 ---
 
 「标准内置对象 [^1]」是指处于

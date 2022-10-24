@@ -1,14 +1,13 @@
 // Replace this with your own font imports!
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap');
+
 :root {
-  --font-body: "Source Sans Pro";
-  --font-header: "Inter";
-  --font-mono: "Fira Code"
+  --font-sans: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  --font-mono: Courier, "Courier New", monospace;
+  --font-serif: Palatino, Optima, Georgia, serif;
 }
 
 // typography
 html {
-  scroll-behavior: smooth;
   &:lang(ar) {
     & p, & h1, & h2, & h3, article, header {
       direction: rtl;
@@ -18,10 +17,15 @@ html {
   & footer > p {
     text-align: center !important;
   }
+
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizelegibility;
 }
 
 .singlePage {
-  padding: 4em 30vw;
+  padding: 4em 28vw;
   @media all and (max-width: 1200px) {
     padding: 25px 5vw;
   }
@@ -37,10 +41,40 @@ body {
   background-color: var(--light);
 }
 
+.page-header {
+  position: sticky;
+  top: 0;
+  background: var(--light);
+
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+
+  & .logo-image {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    justify-content: center;
+    max-width: 16vw;
+  }
+
+  & .logo-text {
+    display: inline-block;
+    justify-content: center;
+
+    font-size: 1.5rem;
+  }
+}
+
 h1, h2, h3, h4, h5, h6, thead {
-  font-family: var(--font-header);
+  font-family: var(--font-sans);
   color: var(--dark);
-  font-weight: revert;
+  font-weight: var(--font-weight-header);
+  line-height: 1.35;
+
   margin: 2rem 0 0;
   padding: 2rem auto 1rem;
 
@@ -49,20 +83,88 @@ h1, h2, h3, h4, h5, h6, thead {
   }
 }
 
+h1, h2, h3, h4, h5 {
+  &::after {
+    margin-left: 0.5rem;
+    font-size: 0.6rem;
+    vertical-align: middle;
+    opacity: 0.4;
+  }
+}
+
+
+h1:not(#page-title) {
+  font-size: 2.2rem;
+  background-color: var(--light) 0.5;
+  &::after {
+    content: url("bird-mirror.png");
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 48px;
+    opacity: 1;
+  }
+}
+
+h2 {
+  font-size: 1.6rem;
+  &::after {
+    content: "h2";
+  }
+}
+
+h3 {
+  font-size: 1.1rem;
+  &::after {
+    content: "h3";
+  }
+}
+
+h3:is(div.desc > h3) {
+  font-size: 1.1rem;
+  &::after {
+    content: "page";
+  }
+}
+
+h3:is(button.result-card > h3) {
+  font-size: 1.1rem;
+  &::after {
+    content: "result";
+  }
+}
+
+
+h4::after {
+  content: "h4";
+}
+
+h5::after {
+  content: "h5";
+}
+
 .hanchor {
-  font-family: var(--font-header);
+  font-family: var(--font-sans);
   opacity: 0.8;
   transition: color 0.3s ease;
   color: var(--dark);
 }
 
-p, ul, text, a, tr, td, li, ol, ul {
-  font-family: var(--font-body);
+p, text, a, tr, td, li, ol, ul {
+  font-family: var(--font-sans);
   color: var(--gray);
   fill: var(--gray);
-  font-weight: revert;
+  font-weight: var(--font-weight-body);
   margin: revert;
   padding: revert;
+}
+
+ol, ul {
+  padding-left: 1.4rem;
+
+  & li {
+    padding-left: 0.2rem;
+  }
 }
 
 tbody, li, p {
@@ -76,9 +178,9 @@ tbody, li, p {
   & details {
     & summary {
       cursor: zoom-in;
-      font-family: var(--font-header);
+      font-family: var(--font-sans);
       color: var(--dark);
-      font-weight: 700;
+      font-weight: var(--font-weight-TOC);
     }
 
     &[open] summary {
@@ -109,8 +211,8 @@ tbody, li, p {
   }
 
   & > li::marker, & > li > ol > li::marker {
-    font-family: var(--font-body);
-    font-weight: 700;
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-TOC);
   }
 }
 
@@ -183,14 +285,14 @@ article {
     margin-top: 2em;
     font-size: 2em;
   }
-  
+
   & > .meta {
     margin: 0 0 1em 0;
     opacity: 0.7;
   }
 
   & a {
-    font-weight: 600;
+    font-weight: var(--font-weight-link-body);
 
     &.internal-link {
       text-decoration: none;
@@ -201,11 +303,11 @@ article {
 
       &.broken {
         opacity: 0.5;
-        background-color: transparent; 
+        background-color: transparent;
       }
     }
   }
-  
+
   & p {
     overflow-wrap: anywhere;
   }
@@ -243,7 +345,7 @@ article {
 }
 
 .backlinks a {
-  font-weight: 600;
+  font-weight: var(--font-weight-backlinks);
   font-size: 0.9rem;
 }
 
@@ -255,13 +357,14 @@ sup > a {
 #page-title {
   margin: 0;
   & > a {
-    font-family: var(--font-header);
+    font-family: var(--font-sans);
+    font-weight: var(--font-weight-title);
   }
 }
 
 a {
   font-size: 1em;
-  font-weight: 700;
+  font-weight: var(--font-weight-link-footer);
   text-decoration: none;
   transition: all 0.2s ease;
   color: var(--secondary);
@@ -295,7 +398,7 @@ footer {
   text-align: center;
   & ul {
     padding-left: 0;
-  } 
+  }
 }
 
 hr {
@@ -438,7 +541,7 @@ header {
     & > input {
       box-sizing: border-box;
       padding: 0.5em 1em;
-      font-family: var(--font-body);
+      font-family: var(--font-sans);
       color: var(--dark);
       font-size: 1.1em;
       border: 1px solid var(--outlinegray);
@@ -509,7 +612,7 @@ header {
 
   & > .section {
     display: flex;
-    align-items: center; 
+    align-items: center;
 
     @media all and (max-width: 600px) {
       & .tags {
@@ -521,11 +624,11 @@ header {
       font-weight: 700;
       margin: 0;
     }
-    
+
     & p {
       margin: 0;
       padding-right: 1em;
-      flex-basis: 6em; 
+      flex-basis: 6em;
     }
   }
 
@@ -598,7 +701,7 @@ header {
   & > p {
     margin: 0;
     padding: 0.5rem 0;
-  } 
+  }
 
   & > p, & > a {
     font-size: 1rem;
@@ -618,4 +721,3 @@ header {
     padding: 0 1em;
   }
 }
-

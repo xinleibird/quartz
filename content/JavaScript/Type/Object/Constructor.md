@@ -3,7 +3,8 @@ title: Constructor
 aliases: [构造器, Constructor]
 tags: [JS]
 enableToc: true
-lastmod: 2022-10-21
+date: 2022-10-19
+lastmod: 2022-10-24
 ---
 
 从 ES5 版本之后，JavaScript 提供了类似于其他 OOP 语言的构造对象的 [[JavaScript/Keyword|关键字]]：[[JavaScript/Operator/new|new]]，以适配新的「构造器 [^1]」机制。

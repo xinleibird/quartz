@@ -3,7 +3,8 @@ title: new
 aliases: [new]
 tags: [JS]
 enableToc: true
-lastmod: 2022-10-21
+date: 2022-10-19
+lastmod: 2022-10-24
 ---
 
 `new` [^1] 运算符

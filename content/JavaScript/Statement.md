@@ -3,10 +3,12 @@ title: Statement
 aliases: [语句, Statement]
 tags: [JS]
 enableToc: true
-lastmod: 2022-10-21
+date: 2022-10-19
+lastmod: 2022-10-24
 ---
 
-> [!summary]
+> [!summary] 语句
+>
 > JavaScript 应用程序是由多个语法正确的「语句 [^1]」组成的。单个语句可以跨多行。如果每个语句用分号隔开，那么多个语句也可以在一行中出现。
 
 ## 流程控制语句

@@ -3,7 +3,8 @@ title: const
 aliases: [const]
 tags: [JS]
 enableToc: true
-lastmod: 2022-10-21
+date: 2022-10-19
+lastmod: 2022-10-24
 ---
 
 `const` [^1] 语句

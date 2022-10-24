@@ -3,7 +3,8 @@ title: do
 aliases: [do, do...while]
 tags: [JS]
 enableToc: true
-lastmod: 2022-10-21
+date: 2022-10-19
+lastmod: 2022-10-24
 ---
 
 `do…while` [^1] 语句

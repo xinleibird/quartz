@@ -3,7 +3,8 @@ title: switch
 aliases: [switch, switch...case, case, default]
 tags: [JS]
 enableToc: true
-lastmod: 2022-10-21
+date: 2022-10-19
+lastmod: 2022-10-24
 ---
 
 `switch…case` [^1] 语句
