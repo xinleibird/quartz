@@ -12,7 +12,12 @@ ignoreFiles = [
 ]
 summaryLength = 20
 paginate = 10
-enableGitInfo = true
+# enableGitInfo = true
+
+enableGitInfo = false
+hasCJKLanguage = true  # Set `true` for Chinese/Japanese/Korean languages.
+defaultContentLanguageInSubdir = false
+removePathAccents = true  # Workaround for REMOVED URL
 
 [markup]
     [markup.tableOfContents]

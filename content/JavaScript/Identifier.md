@@ -1,29 +1,30 @@
 ---
 title: Identifier
-aliases: [标识符, 变量名, 函数名, 属性名, 键, Identifier, Key]
+aliases: [标识符, 变量名, 函数名, 属性名, 键, Identifier, Key, Name]
 tags: [JavaScript]
 enableToc: true
 date: 2022-10-19
-lastmod: 2022-10-24
+lastmod: 2022-10-27
+disabled rules: []
 ---
 
 > [!summary] 标识符
 >
->「标识符 [^1]」是代码中用来「识别」和「控制」[[JavaScript/Variable|变量]]、[[JavaScript/Function|函数]]、[[JavaScript/Type/Object/Property|属性]] 的「链」。我们可以简单的总结：「标识符」可以作为 [[JavaScript/Identifier|变量名]]、[[JavaScript/Identifier|函数名]] 和 [[JavaScript/Identifier|属性名]]。
+>「标识符 [^1]」是代码中用来「识别」和「控制」[[JavaScript/Variable|变量]]、[[JavaScript/Function|函数]]、[[JavaScript/Data Type/Object/Property|属性]] 的「链」。我们可以简单的总结：「标识符」可以作为 [[JavaScript/Identifier|变量名]]、[[JavaScript/Identifier|函数名]] 和 [[JavaScript/Identifier|属性名]]。
 >
->「标识符」的 [[JavaScript/Type|类型]] 可以是 [[JavaScript/Type/Primitive/string|string]] 或者 [[JavaScript/Type/Primitive/symbol|symbol]]。
+>「标识符」的 [[JavaScript/Data Type|类型]] 可以是 [[JavaScript/Data Type/Primitive/string|string]] 或者 [[JavaScript/Data Type/Primitive/symbol|symbol]]。
 
 ## 标识符命名规则
 
-当使用 [[JavaScript/Type/Primitive/string|string]] 时：
+当使用 [[JavaScript/Data Type/Primitive/string|string]] 时：
 
 - 只能包含：**字母**、**数字**、**下划线 `_`**、**美元符号 `$`**，且 **不能以数字开头**。
 - 区分大小写。
 - 可以使用大部分 Unicode[^2] 字符。
 
-当使用 [[JavaScript/Type/Primitive/symbol|symbol]] 时：
+当使用 [[JavaScript/Data Type/Primitive/symbol|symbol]] 时：
 
-- 由于 [[JavaScript/Type/Primitive/symbol|symbol]] 可以确保唯一性，因此无特殊要求。
+- 由于 [[JavaScript/Data Type/Primitive/symbol|symbol]] 可以确保唯一性，因此无特殊要求。
 
 ## 标识符是「链」
 
@@ -35,7 +36,7 @@ const hello = "fuck";
 console.log(hello);	// "fuck"
 ```
 
-上面的例子不应该期待输出结果是 `hello`。我们将一个 [[JavaScript/Type/Primitive/string|string]] 类型的 `"hello"` 作为「标识符」从而代表」了实际存储的字符串 `"fuck"`。
+上面的例子不应该期待输出结果是 `hello`。我们将一个 [[JavaScript/Data Type/Primitive/string|string]] 类型的 `"hello"` 作为「标识符」从而代表」了实际存储的字符串 `"fuck"`。
 
 ## 标识符是「键」
 
@@ -56,7 +57,7 @@ const relations = [1, 3, 0 , 4];
 
 ![[Attachments/Identifier.svg]]
 
-可以看出，标识符是作为 [[JavaScript/Variable|变量]]、[[JavaScript/Function|函数]]、[[JavaScript/Type/Object/Property|属性]] 的 [[JavaScript/Identifier|键]] 而存在的：
+可以看出，标识符是作为 [[JavaScript/Variable|变量]]、[[JavaScript/Function|函数]]、[[JavaScript/Data Type/Object/Property|属性]] 的 [[JavaScript/Identifier|键]] 而存在的：
 
 ![[Attachments/IdentifierKeyValue.svg]]
 

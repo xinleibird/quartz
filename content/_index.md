@@ -6,7 +6,7 @@ disabled rules: [yaml-title, yaml-timestamp, insert-yaml-attributes]
 
 <h1 align="center">把栗子都举起来</h1>
 
-![[Attachments/chestnut.png]]
+![[Attachments/chestnut_background.png]]
 
 >[!quote] 作之不止乃成君子
 >
@@ -47,3 +47,5 @@ disabled rules: [yaml-title, yaml-timestamp, insert-yaml-attributes]
 知识产出是学习过程产出的副产品。
 
 通过了上面「学习方法」的流程，最后的副产品会保留在这里。结构化的文档体系也算是自己「已知」内容的提纲。
+
+[[JavaScript/JS|JavaScript]]

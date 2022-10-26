@@ -4,7 +4,8 @@ aliases: [函数, Function]
 tags: [JavaScript]
 enableToc: true
 date: 2022-10-19
-lastmod: 2022-10-24
+lastmod: 2022-10-27
+disabled rules: []
 ---
 
 「函数 [^1]」
