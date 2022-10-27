@@ -36,7 +36,7 @@ const removeMarkdown = (
       .replace(/\s{0,2}\[.*?\]: .*?$/g, "")
       .replace(/\!\[(.*?)\][\[\(].*?[\]\)]/g, options.useImgAltText ? "$1" : "")
       .replace(/\[(.*?)\][\[\(].*?[\]\)]/g, "<a>$1</a>")
-      .replace(/!?\[\[\S[^\[\]\|]*(?:\|([^\[\]]*))?\S\]\]/g, "<a>$1</a>")
+      .replace(/!?\[\[\S[^\[\]\|]*(?:\|([^\[\]]*))?\S*\]\]/g, "<a>$1</a>")
       .replace(/^\s{0,3}>\s?/g, "")
       .replace(/(^|\n)\s{0,3}>\s?/g, "\n\n")
       .replace(/^\s{1,2}\[(.*?)\]: (\S+)( ".*?")?\s*$/g, "")
@@ -102,8 +102,9 @@ const highlight = (content, term) => {
     })
     .join(" ")
     .replaceAll('</span> <span class="search-highlight">', " ")
-  return `${startIndex === 0 ? "" : "..."}${mappedText}${endIndex === splitText.length ? "" : "..."
-    }`
+  return `${startIndex === 0 ? "" : "..."}${mappedText}${
+    endIndex === splitText.length ? "" : "..."
+  }`
 }
 
 // Common utilities for search
@@ -189,17 +190,16 @@ const displayResults = (finalResults, extractHighlight = false) => {
   } else {
     results.innerHTML = finalResults
       .map((result) => {
-          if (extractHighlight) {
-            return resultToHTML({
-              url: result.url,
-              title: highlight(result.title, term),
-              content: highlight(removeMarkdown(result.content), term)
-            })
-          } else {
-            return resultToHTML(result)
-          }
+        if (extractHighlight) {
+          return resultToHTML({
+            url: result.url,
+            title: highlight(result.title, term),
+            content: highlight(removeMarkdown(result.content), term),
+          })
+        } else {
+          return resultToHTML(result)
         }
-      )
+      })
       .join("\n")
     const anchors = [...document.getElementsByClassName("result-card")]
     anchors.forEach((anchor) => {

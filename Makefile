@@ -18,3 +18,6 @@ update-force: ## Forcefully pull all changes and don't ask to patch
 
 serve: ## Serve Quartz locally
 	hugo-obsidian -input=content -output=assets/indices -index -root=. && hugo server --enableGitInfo --minify
+
+dev: ## Serve Quartz locally
+	hugo-obsidian -input=/Users/xinlei/Library/Mobile\ Documents/iCloud~md~obsidian/Documents -output=assets/indices -index -root=. && hugo server --enableGitInfo --minify
