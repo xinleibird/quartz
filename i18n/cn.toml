@@ -47,13 +47,13 @@ other = "…"
 other = "查找"
 
 [icon_search]
-other = "Icon to open search"
+other = "点击图标搜索"
 
 [recent_notes]
-other = "Recent Notes"
+other = "最近笔记"
 
 [first_3_notes]
-other = "first 3 {{ .notes }}"
+other = "前三 {{ .notes }}"
 
 [search_for_something]
 other = "找点什么..."

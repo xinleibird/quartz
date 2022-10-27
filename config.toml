@@ -1,23 +1,17 @@
-baseURL = "https://garden.xinlei.host/"
+baseURL = "https://juli.xinlei.host/"
 languageCode = "zh-cn"
 defaultContentLanguage = 'cn'
 googleAnalytics = "G-XYFD95KB4J"
 relativeURLs = false
 disablePathToLower = true
 ignoreFiles = [
-    "/content/Templates/*",
     "/content/Private/*",
     "/content/.obsidian/*",
 
 ]
 summaryLength = 20
 paginate = 10
-# enableGitInfo = true
-
-enableGitInfo = false
-hasCJKLanguage = true  # Set `true` for Chinese/Japanese/Korean languages.
-defaultContentLanguageInSubdir = false
-removePathAccents = true  # Workaround for REMOVED URL
+enableGitInfo = true
 
 [markup]
     [markup.tableOfContents]
